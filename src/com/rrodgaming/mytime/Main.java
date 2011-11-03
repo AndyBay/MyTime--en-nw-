@@ -11,7 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
 
     Logger mine;
-    Boolean nw = false; 
+    Boolean nw = true; 
     
     @Override
     public void onDisable() {
