@@ -1,0 +1,11 @@
+README.txt
+
+This plugin is a fork of shadrxninga's original plugin 'MyTime'.
+I have updated it to work with Craftbukkit #1337. 
+
+New Features: 
+  + Added Language Management, with English and Norwegian. 
+  + Corrected the fact that dusk and night were mixed. 
+  
+For shadrxninga: 
+	Do feel free to use this on your plugin's thread. But, do state that I developed this version. 
