@@ -73,7 +73,7 @@ public class Main extends JavaPlugin {
             nw = false; 
         }
         else {
-            if (nw == true) sender.sendMessage(ChatColor.RED + "[MinTid] Du har ikke tillatelse til � gj�re det!te");
+            if (nw == true) sender.sendMessage(ChatColor.RED + "[MinTid] Du har ikke tillatelse til å gjøre dette!");
             if (nw == false) sender.sendMessage("[MyTime] You don't have permission to do that!"); 
         }
         return false;
