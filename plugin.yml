@@ -1,0 +1,15 @@
+author: RROD, shadrxninga
+database: false
+description: "Change your time, not the server's. "
+main: com.rrodgaming.mytime.Main
+name: MyTime
+version: 0.3
+commands:
+    mytime:
+        description: Sets your client's time.
+    mintid:
+        description: Sets your client's time.
+    norwegian:
+        description: Sets MyTime's Language to Norwegian.
+    english:
+        description: Sets MyTime's Language to English.
