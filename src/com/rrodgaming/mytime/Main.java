@@ -42,38 +42,38 @@ public class Main extends JavaPlugin {
             if ((args[0].equalsIgnoreCase("day")) || (args[0].equalsIgnoreCase("dag"))) {
                 newTime += 0L;
                 player.setPlayerTime(newTime, false); 
-                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid er blitt endret til: " + ChatColor.WHITE + "dag. ");
+                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid er endret til: " + ChatColor.WHITE + "dag. ");
                 if (nw == false) player.sendMessage(ChatColor.YELLOW + "Your time has been changed to: " + ChatColor.WHITE + "day. ");
             } else if ((args[0].equalsIgnoreCase("night")) || (args[0].equalsIgnoreCase("natt"))) {
                 newTime += 14000L;
                 player.setPlayerTime(newTime, false); 
-                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid er blitt endret til: " + ChatColor.WHITE + "natt. ");
+                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid er endret til: " + ChatColor.WHITE + "natt. ");
                 if (nw == false) player.sendMessage(ChatColor.YELLOW + "Your time has been changed to: " + ChatColor.WHITE + "night. ");
             } else if ((args[0].equalsIgnoreCase("dusk")) || (args[0].equalsIgnoreCase("skumring"))) {
                 newTime += 12500L;
                 player.setPlayerTime(newTime, false); 
-                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid er blitt endret til: " + ChatColor.WHITE + "skumring. ");
+                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid er endret til: " + ChatColor.WHITE + "skumring. ");
                 if (nw == false) player.sendMessage(ChatColor.YELLOW + "Your time has been changed to: " + ChatColor.WHITE + "dusk. ");
             } else if (args[0].equalsIgnoreCase("dawn")) {
                 newTime += 23000L;
                 player.setPlayerTime(newTime, false); 
-                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid er blitt endret til: " + ChatColor.WHITE + "dawn. ");
+                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid er endret til: " + ChatColor.WHITE + "dawn. ");
                 if (nw == false) player.sendMessage(ChatColor.YELLOW + "Your time has been changed to: " + ChatColor.WHITE + "dawn. ");
             } else if ((args[0].equalsIgnoreCase("reset")) || (args[0].equalsIgnoreCase("resett"))) {
                 long curTimeWorld = player.getWorld().getTime();
                 player.setPlayerTime(curTimeWorld, false); 
-                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid har blitt resett!");
+                if (nw == true) player.sendMessage(ChatColor.YELLOW + "Din tid er nÃ¥ tilbakestilt!");
                 if (nw == false) player.sendMessage(ChatColor.YELLOW + "Your time has been reset! ");
             }
         } else if ((cmd.getName().equalsIgnoreCase("Norwegian")) && (sender.isOp())) {
-            sender.sendMessage("[MyTime] Sett språk til norsk!"); 
+            sender.sendMessage("[MyTime] SprÃ¥k oversatt til Norsk"); 
             nw = true; 
         }  else if ((cmd.getName().equalsIgnoreCase("English")) && (sender.isOp())) {
             sender.sendMessage("[MyTime] Set language to English!"); 
             nw = false; 
         }
         else {
-            if (nw == true) sender.sendMessage(ChatColor.RED + "[MinTid] Du har ikke tillatelse til å gjøre det!");
+            if (nw == true) sender.sendMessage(ChatColor.RED + "[MinTid] Du har ikke tillatelse til ï¿½ gjï¿½re det!te");
             if (nw == false) sender.sendMessage("[MyTime] You don't have permission to do that!"); 
         }
         return false;
